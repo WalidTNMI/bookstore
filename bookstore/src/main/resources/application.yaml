@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.1.175:5432/CT_ETL
+    username: postgres
+    password: toor
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+            scripts:
+              create-target: create.sql
+              drop-target: drop.sql
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        data: debug
+        web: DEBUG
+server:
+  port: 8080
