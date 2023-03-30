@@ -1,19 +1,19 @@
-#Bookstore REST API
+# Bookstore REST API
 The Bookstore REST API provides endpoints for managing books in a bookstore.
 
-##Getting Started
+## Getting Started
 To use the Bookstore REST API, you need to have the following installed on your system:
 
 Java 17 or later
 Apache Maven 3.6 or later
 PostgreSQL 9.6 or later
-###Clone the repository
+### Clone the repository
 First, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/bookstore.git
 ```
-###Set up the database
+### Set up the database
 Create a new database in PostgreSQL with the following settings:
 
 Host: localhost
@@ -22,7 +22,7 @@ Database name: CT_ETL
 Username: postgres
 Password: toor
 
-###Build and run the application
+### Build and run the application
 Navigate to the root directory of the repository and run the following command to build the application:
 
 ```bash
@@ -35,7 +35,7 @@ java -jar target/bookstore-0.0.1-SNAPSHOT.war
 ```
 The application will start running on port 8080.
 
-###Testing the API
+### Testing the API
 To test the API, you can use a tool like Postman or curl.
 
 List all books
@@ -58,7 +58,7 @@ Delete a book
 ```bash
 curl -X DELETE http://localhost:8080/books/{id}
 ```
-###API Documentation
+### API Documentation
 API documentation is available using Swagger at the following URL:
 
 ```bash
